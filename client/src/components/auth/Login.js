@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-// import axios from "axios";
+import React, { useState, Fragment } from "react";
+
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -35,7 +35,7 @@ const Login = () => {
   };
 
   return (
-    <section className="container">
+    <Fragment>
       <div className="alert alert-danger">Invalid credentials</div>
       <h1 className="large text-primary">Sign In</h1>
       <p className="lead">
@@ -67,7 +67,7 @@ const Login = () => {
       <p className="my-1">
         Don't have an account? <Link to="/register">Sign Up</Link>
       </p>
-    </section>
+    </Fragment>
   );
 };
 
